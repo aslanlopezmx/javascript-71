@@ -1,75 +1,27 @@
-console.log("Hola Mundo")
 /**
- * En javascript hay 3 formas de declarar variables
- * !Existe una forma que ya no se recomienda su uso
- * !var
- * Al proces de crear una variable y darle un valor se le llama asignacion
+ * Prompt:
+ * 1. Hay que asignar su uso a una variable para luego poder usar el valor que ingreso el usuario
+ * 1.2 Usar el valor inmediatamente
  * 
- * A las variables que pueden ser asignadas (pueden cambiar en un furo el valor que tienen) se declaran:
- * ? let nombreVariable = valor; (asigna el valor x a la variable y)
- * 
- * *el operador = se conoce como operador de asignación
- * Una vez usada una variable, podemos usarla en otros lugares dell codigo utilizando su nombre,
- * las variables al ser utilizadas no van entre comillas
- * 
- * Las variables que no pueden ser reasignadas (su valor no puede cambiar)
- * se declaran
- * !   const nombreVariable = valor;
- * 
- * Notas: 
- * Palabras reservadas: palabras que utilizan el lenguaje de programacion y si
- * intemntamos usarlas en otros lados pueden generar errores.
- * 
+ * !mportante
+ *!  1. No se recomienda su uso en aplicaciones en produccion
+ *!  2. Bloquea el código, esto quiere decir que el codigo que este debajo de donde escribimos el uso
+ *!     de prompt, no se va a ejecutar hasta que el usuario ingrese algo
+ *!  3 No se puede personalizar
+ *!  4.Todo lo que ingresa mediante prompt siempre es un String
  * 
  */
 
-let nombre = "aslan";
-let name = "aslan";
-console.log(nombre)  //tipo String
-
-const birthYear = 1998; //tipo numero
-console.log(birthYear)
-
-/*Reasignando una variable (cambiando el valor que tiene)
-*Cuando reasignamos una variale (una variable ya creada)
-*! Ya no es necesario poner let
-*/
-
-nombre = "Juan";
-console.log(nombre);
-
-/**seccion de prueba
-birthYear = 1995;**/
-
-/**Concantenar: Nos permite pegar el valor de una variable  a un texto
-**/
-console.log("Hola soy " + nombre + " y estoy con " + name)
+ //   const edad = prompt("Ingresa tu edad", "Sin edad");
+ //   console.log(edad);
+ //   const nm = prompt("Ingresa tu nombre","Sin nombre");
+ //   console.log(nm);
+ //   console.log("Hola, soy " + nm + " y tengo " + edad + " años");
+ //   alert("Hola, soy " + nm + " y tengo " + edad + " años");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ const serie = prompt("¿Cual es tu serie favorita?");
+ const char = prompt("¿Cual es tu personaje favorito de esta serie?");
+ const desc = prompt("¿Por qué es tu personaje favorito?");
+ alert("En la serie " + serie + " aparece el  personaje " + char + " y me gusta por " + desc);
